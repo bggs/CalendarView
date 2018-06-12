@@ -29,7 +29,8 @@ public class AttrsBean {
     private int dayBg = R.drawable.blue_circle;//选中的背景
     private Map<String, String> specifyMap;//指定日期对应的文字map
     private int chooseType = 0;//表示日历是单选还是多选
-
+    private boolean setEnabled = true;//是否可以点击
+    
     public int[] getStartDate() {
         return startDate;
     }
@@ -105,7 +106,10 @@ public class AttrsBean {
     public boolean isShowTerm() {
         return showTerm;
     }
-
+    public boolean isSetEnabled() {
+        return setEnabled;
+    }
+    
     public void setShowTerm(boolean showTerm) {
         this.showTerm = showTerm;
     }
